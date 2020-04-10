@@ -1,53 +1,60 @@
-# rollup-plugin-markdown
+= Rollup Plugin for Asciidoc
+Carlos Martin Sanchez <https://github.com/carlosvin[@carlosvin]>
+:idprefix:
+:idseparator: -
+:uri-nodejs: https://nodejs.org
+:uri-opal: https://opalrb.com
+:uri-repo: https://github.com/carlosvin/rollup-plugin-asciidoc/
+:uri-freesoftware: https://www.gnu.org/philosophy/free-sw.html
+ifndef::uri-rel-file-base[:uri-rel-file-base: link:]
+:license: {uri-repo}/blob/master/LICENSE
+:endash:
 
-[![CircleCI](https://circleci.com/gh/jackfranklin/rollup-plugin-markdown.svg?style=svg)](https://circleci.com/gh/jackfranklin/rollup-plugin-markdown)
+Plugin to import Asciidoctor files using Rollup.
 
-A Rollup plugin to parse Markdown files.
+== Quickstart
 
-- [Showdown][showdown] is used to parse the Markdown
-- [Gray Matter][gray-matter] is used to parse front-matter from the markdown file.
+ $ yarn add rollup-plugin-asciidoc --dev
 
-## Install
+Add the plugin to Rollup configuration.
 
-```
-npm install --save-dev @jackfranklin/rollup-plugin-markdown
+.rollup.config.js
+[source,javascript]
+----
+import asciidoc from 'rollup-plugin-asciidoc' // <1>
 
-yarn add --dev @jackfranklin/rollup-plugin-markdown
-```
+// ...
 
-## Example module output
+plugins: [ // <2>
+			asciidoc(),
+]
+----
+<1> Import Asciidoc plugin
+<2> Plugins section in Rollup configuration
 
-```js
-import blogPost from './blog-post.md'
+Import an Asciidoc file in your source code.
 
-// from this import you get:
-blogPost.html // the parsed HTML
-blogPost.metadata // a JS object of the front-matter
-blogPost.filename // blog-post.md - the filename that was imported
-```
 
-## Rollup configuration
+.example.js
+[source,javascript]
+----
+import post from 'post.adoc' // <1>
 
-```js
-import markdown from '@jackfranklin/rollup-plugin-markdown'
+console.log(post);
+----
+<1> Import Asciidoc file.
+<2> Log the content.
 
-export default {
-  input: 'your-app.js',
-  plugins: [markdown()],
+
+It will output something like:
+
+[source,javascript]
+----
+{ 
+  meta: {
+    title: "Post title",
+    date: "2019-11-11"
+  },
+  html: "<p>Such a post!</p>"
 }
-```
-
-You can pass in two options: `include` and `exclude`, which are globs to limit which file(s) the plugin is applied to.
-
-The plugin will only parse `.md` files.
-
-[showdown]: https://github.com/showdownjs/showdown
-[gray-matter]: https://github.com/jonschlinkert/gray-matter
- 
-## Changelog
-
-#### 0.2.0
-- expose full path to Markdown file as `.path` from the import.
-
-#### 0.1.0
-- Initial release
+---

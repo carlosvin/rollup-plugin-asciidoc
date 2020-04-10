@@ -17,14 +17,15 @@ const asciidocPlugin = (options = {}) => {
 
       if (extension !== '.adoc') return
 
-      const conversion = adoc.convert(code)
-      console.log(conversion)
+      const html = adoc.convert(code)
+      const doc = adoc.loadFile(id)
+     //  console.log('attr:', doc.getAttributes())
 
       const exportFromModule = JSON.stringify({
         html,
-        metadata: matterResult.data,
         filename: path.basename(id),
         path: id,
+        metadata: doc.getAttributes(),
       })
 
       return {

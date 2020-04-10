@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a module for the asciidoc file 1`] = `
+Object {
+  "filename": "test.adoc",
+  "html": "<div class=\\"paragraph\\">
+<p>It’s fair to say that React 16.8 and the introduction of
+<a href=\\"https://reactjs.org/docs/hooks-intro.html\\">hooks</a> has really changed how
+we write React. Hooks are one of those APIs that make you realise the
+flaws of the previous approach <em>after</em> you stop using it. I remember
+being very skeptical of hooks when they were first released, not
+thinking that the previous class based design had many flaws, but I’ve
+since come to realise I was very wrong, and hooks are a vast improvement
+on how we build React components. If you’re interested in comparing the
+old vs the new, I wrote a <a href=\\"/refactoring-to-react-hooks/\\">blog post
+refactoring a component to use hooks</a> that offers a nice comparison.</p>
+</div>",
+  "metadata": Object {
+    "appendix-caption": "Appendix",
+    "appendix-refsig": "Appendix",
+    "asciidoctor": "",
+    "asciidoctor-version": "2.0.10",
+    "asdf": "made up attr",
+    "attribute-missing": "skip",
+    "attribute-undefined": "drop-line",
+    "author": "Doc Writer",
+    "authorcount": 1,
+    "authorinitials": "DW",
+    "authors": "Doc Writer",
+    "backend": "html5",
+    "backend-html5": "",
+    "backend-html5-doctype-article": "",
+    "basebackend": "html",
+    "basebackend-html": "",
+    "basebackend-html-doctype-article": "",
+    "caution-caption": "Caution",
+    "chapter-refsig": "Chapter",
+    "docdate": "2020-04-10",
+    "docdatetime": "2020-04-10 14:05:14 +0200",
+    "docdir": "",
+    "docfile": "test.adoc",
+    "docfilesuffix": ".adoc",
+    "docname": "test",
+    "doctime": "14:05:14 +0200",
+    "doctitle": "My Document's Title",
+    "doctype": "article",
+    "doctype-article": "",
+    "docyear": "2020",
+    "email": "doc.writer@asciidoctor.org",
+    "embedded": "",
+    "example-caption": "Example",
+    "figure-caption": "Figure",
+    "filetype": "html",
+    "filetype-html": "",
+    "firstname": "Doc",
+    "htmlsyntax": "html",
+    "iconfont-remote": "",
+    "iconsdir": "./images/icons",
+    "important-caption": "Important",
+    "intro": "A short post today about an easy tactic to avoid your useEffect calls becoming recursive when setting state.",
+    "last-update-label": "Last updated",
+    "lastname": "Writer",
+    "layout": "post",
+    "linkcss": "",
+    "localdate": undefined,
+    "localdatetime": undefined,
+    "localtime": undefined,
+    "localyear": undefined,
+    "max-attribute-value-size": 4096,
+    "max-include-depth": 64,
+    "note-caption": "Note",
+    "notitle": "",
+    "outfilesuffix": ".html",
+    "part-refsig": "Part",
+    "prewrap": "",
+    "revdate": "2014-01-01",
+    "revnumber": "1.0",
+    "safe-mode-level": 20,
+    "safe-mode-name": "secure",
+    "safe-mode-secure": "",
+    "sectids": "",
+    "section-refsig": "Section",
+    "stylesdir": ".",
+    "stylesheet": "",
+    "table-caption": "Table",
+    "tip-caption": "Tip",
+    "title": "'Avoiding recursive useEffect hooks in React'",
+    "toc-placement": "auto",
+    "toc-title": "Table of Contents",
+    "untitled-label": "Untitled",
+    "user-home": ".",
+    "version-label": "Version",
+    "warning-caption": "Warning",
+    "webfonts": "",
+  },
+  "path": "/home/carlos/workspace/rollup-plugin-asciidoc/__tests__/fixtures/test.adoc",
+}
+`;

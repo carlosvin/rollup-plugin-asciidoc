@@ -47,13 +47,13 @@ it('returns a module for the asciidoc file', async () => {
   })
 
   const requiredModule = requireFromString(code)
+  requiredModule.metadata.localdate = undefined
+  requiredModule.metadata.localdatetime = undefined
+  requiredModule.metadata.localtime = undefined
+  requiredModule.metadata.localyear = undefined
 
-  expect(requiredModule.html).toMatchSnapshot()
-  expect(requiredModule.metadata).toEqual({
-    layout: 'post',
-    title: 'Avoiding recursive useEffect hooks in React',
-    intro: expect.any(String),
-  })
+  expect(requiredModule).toMatchSnapshot()
+  
   expect(requiredModule.filename).toEqual('test.adoc')
   expect(requiredModule.path).toEqual(path.resolve(path.join(__dirname, 'fixtures/test.adoc')))
 })
