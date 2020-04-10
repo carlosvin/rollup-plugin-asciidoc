@@ -1,0 +1,28 @@
+{
+  "name": "@carlosvin/rollup-plugin-asciidoc",
+  "version": "0.0.1",
+  "description": "Parse Asciidoctor files and import them with Rollup",
+  "main": "src/rollup-plugin-asciidoc.js",
+  "fles": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "asciidoc",
+    "asciidoctor",
+    "rollup"
+  ],
+  "author": "Carlos Martin Sanchez",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/pluginutils": "^3.0.8",
+    "jest": "^25.3.0",
+    "prettier": "^2",
+    "rollup": "^2"
+  },
+  "dependencies": {
+    "asciidoctor": "^2.1.1"
+  }
+}
