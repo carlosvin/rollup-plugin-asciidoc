@@ -14,6 +14,12 @@ since come to realise I was very wrong, and hooks are a vast improvement
 on how we build React components. If you’re interested in comparing the
 old vs the new, I wrote a <a href=\\"/refactoring-to-react-hooks/\\">blog post
 refactoring a component to use hooks</a> that offers a nice comparison.</p>
+</div>
+<div class=\\"listingblock\\">
+<div class=\\"content\\">
+<pre class=\\"highlightjs highlight\\"><code data-lang=\\"python\\" class=\\"language-python hljs\\">def main():
+    pass</code></pre>
+</div>
 </div>",
   "metadata": Object {
     "appendix-caption": "Appendix",
@@ -35,13 +41,13 @@ refactoring a component to use hooks</a> that offers a nice comparison.</p>
     "basebackend-html-doctype-article": "",
     "caution-caption": "Caution",
     "chapter-refsig": "Chapter",
-    "docdate": "2020-04-10",
-    "docdatetime": "2020-04-10 14:05:14 +0200",
+    "docdate": "2020-04-12",
+    "docdatetime": "2020-04-12 01:43:09 +0200",
     "docdir": "",
     "docfile": "test.adoc",
     "docfilesuffix": ".adoc",
     "docname": "test",
-    "doctime": "14:05:14 +0200",
+    "doctime": "01:43:09 +0200",
     "doctitle": "My Document's Title",
     "doctype": "article",
     "doctype-article": "",

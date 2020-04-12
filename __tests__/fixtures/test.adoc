@@ -2,11 +2,11 @@
 = My Document's Title
 Doc Writer <doc.writer@asciidoctor.org>
 v1.0, 2014-01-01
+:source-highlighter: highlightjs
 :layout: post
 :title: 'Avoiding recursive useEffect hooks in React'
 :intro: A short post today about an easy tactic to avoid your useEffect calls becoming recursive when setting state.
 :asdf: made up attr
-
 
 It’s fair to say that React 16.8 and the introduction of
 https://reactjs.org/docs/hooks-intro.html[hooks] has really changed how
@@ -18,3 +18,9 @@ since come to realise I was very wrong, and hooks are a vast improvement
 on how we build React components. If you’re interested in comparing the
 old vs the new, I wrote a link:/refactoring-to-react-hooks/[blog post
 refactoring a component to use hooks] that offers a nice comparison.
+
+[source,python]
+----
+def main():
+    pass
+----

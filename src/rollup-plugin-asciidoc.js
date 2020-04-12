@@ -17,9 +17,9 @@ const asciidocPlugin = (options = {}) => {
 
       if (extension !== '.adoc') return
 
-      const html = adoc.convert(code)
+      const html = adoc.convert(code,  { 'safe': 'safe', 'attributes': { 'linkcss': true } })
       const doc = adoc.loadFile(id)
-     //  console.log('attr:', doc.getAttributes())
+      // console.log('file: ', adoc.convertFile(id,  { 'safe': 'safe', 'attributes': { 'linkcss': true } }))
 
       const exportFromModule = JSON.stringify({
         html,
