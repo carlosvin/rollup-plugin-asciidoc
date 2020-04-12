@@ -21,10 +21,7 @@ const asciidocPlugin = (options = {}) => {
       if (extension !== '.adoc') return
 
       const html = adoc.convert(
-        code, { 
-          'safe': 'safe', 
-          'attributes': { 
-            'source-highlighter': 'highlightjs-ext' } })
+        code, { 'attributes': { 'source-highlighter': 'highlightjs-ext' } })
 
       const doc = adoc.loadFile(id)
 
