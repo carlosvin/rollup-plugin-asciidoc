@@ -57,4 +57,11 @@ It will output something like:
   },
   html: "<p>Such a post!</p>"
 }
----
+----
+
+
+== Changelog
+
+=== 0.2.0
+
+add:: Apply code highlighting thanks to https://github.com/jirutka/asciidoctor-highlight.js/[asciidoctor-highlight.js]

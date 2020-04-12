@@ -2,10 +2,13 @@ const utils = require('@rollup/pluginutils');
 
 const path = require('path')
 const Asciidoctor = require('asciidoctor')
-const adoc = Asciidoctor()
+const highlightJsExt = require('asciidoctor-highlight.js')
 
 
 const asciidocPlugin = (options = {}) => {
+  const adoc = Asciidoctor()
+  highlightJsExt.register(adoc.Extensions)
+
   const filter = utils.createFilter(options.include, options.exclude)
 
   return {
@@ -17,9 +20,13 @@ const asciidocPlugin = (options = {}) => {
 
       if (extension !== '.adoc') return
 
-      const html = adoc.convert(code,  { 'safe': 'safe', 'attributes': { 'linkcss': true } })
+      const html = adoc.convert(
+        code, { 
+          'safe': 'safe', 
+          'attributes': { 
+            'source-highlighter': 'highlightjs-ext' } })
+
       const doc = adoc.loadFile(id)
-      // console.log('file: ', adoc.convertFile(id,  { 'safe': 'safe', 'attributes': { 'linkcss': true } }))
 
       const exportFromModule = JSON.stringify({
         html,

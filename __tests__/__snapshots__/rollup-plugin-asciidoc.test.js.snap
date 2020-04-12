@@ -17,8 +17,8 @@ refactoring a component to use hooks</a> that offers a nice comparison.</p>
 </div>
 <div class=\\"listingblock\\">
 <div class=\\"content\\">
-<pre class=\\"highlightjs highlight\\"><code data-lang=\\"python\\" class=\\"language-python hljs\\">def main():
-    pass</code></pre>
+<pre class=\\"highlight\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">def</span> <span class=\\"hljs-title\\">main</span><span class=\\"hljs-params\\">()</span>:</span>
+    <span class=\\"hljs-keyword\\">pass</span></code></pre>
 </div>
 </div>",
   "metadata": Object {

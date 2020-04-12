@@ -673,6 +673,13 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
+asciidoctor-highlight.js@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/asciidoctor-highlight.js/-/asciidoctor-highlight.js-0.2.1.tgz#265411b6a54b0932e404cdd72a1228374c939709"
+  integrity sha512-nDsTOdVBf0e5/ua2bPiCj32rYQl/iprOR5LV79axuW9eMIadEH9LaXLVqDo+tAopQ1iPPmvIX9uhnO08js4kDg==
+  dependencies:
+    highlight.js "^9.0.0"
+
 asciidoctor-opal-runtime@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/asciidoctor-opal-runtime/-/asciidoctor-opal-runtime-0.3.0.tgz#df327a870ddd3cd5eb0e162d64ed4dcdd3fe3fee"
@@ -1553,6 +1560,11 @@ has-values@^1.0.0:
   dependencies:
     is-number "^3.0.0"
     kind-of "^4.0.0"
+
+highlight.js@^9.0.0:
+  version "9.18.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
+  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
 
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"

@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-asciidoc",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Parse Asciidoctor files and import them with Rollup",
   "main": "src/rollup-plugin-asciidoc.js",
   "files": [
@@ -23,6 +23,7 @@
     "rollup": "^2"
   },
   "dependencies": {
-    "asciidoctor": "^2.1.1"
+    "asciidoctor": "^2.1.1",
+    "asciidoctor-highlight.js": "^0.2.1"
   }
 }
