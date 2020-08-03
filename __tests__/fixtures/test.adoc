@@ -24,3 +24,14 @@ refactoring a component to use hooks] that offers a nice comparison.
 def main():
     pass
 ----
+
+WARNING: Wolpertingers are known to nest in server racks.   
+Enter at your own risk.
+
+.void main
+[source,cpp]
+----
+int main () {
+    return 0;
+}
+----

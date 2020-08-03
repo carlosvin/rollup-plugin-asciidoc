@@ -17,8 +17,29 @@ refactoring a component to use hooks</a> that offers a nice comparison.</p>
 </div>
 <div class=\\"listingblock\\">
 <div class=\\"content\\">
-<pre class=\\"highlight\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">def</span> <span class=\\"hljs-title\\">main</span><span class=\\"hljs-params\\">()</span>:</span>
+<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">def</span> <span class=\\"hljs-title\\">main</span><span class=\\"hljs-params\\">()</span>:</span>
     <span class=\\"hljs-keyword\\">pass</span></code></pre>
+</div>
+</div>
+<div class=\\"admonitionblock warning\\">
+<table>
+<tr>
+<td class=\\"icon\\">
+<div class=\\"title\\">Warning</div>
+</td>
+<td class=\\"content\\">
+Wolpertingers are known to nest in server racks.
+Enter at your own risk.
+</td>
+</tr>
+</table>
+</div>
+<div class=\\"listingblock\\">
+<div class=\\"title\\">void main</div>
+<div class=\\"content\\">
+<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-cpp\\" data-lang=\\"cpp\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">int</span> <span class=\\"hljs-title\\">main</span> <span class=\\"hljs-params\\">()</span> </span>{
+    <span class=\\"hljs-keyword\\">return</span> <span class=\\"hljs-number\\">0</span>;
+}</code></pre>
 </div>
 </div>",
   "metadata": Object {
@@ -41,13 +62,13 @@ refactoring a component to use hooks</a> that offers a nice comparison.</p>
     "basebackend-html-doctype-article": "",
     "caution-caption": "Caution",
     "chapter-refsig": "Chapter",
-    "docdate": "2020-04-12",
-    "docdatetime": "2020-04-12 01:43:09 +0200",
+    "docdate": "2020-08-03",
+    "docdatetime": "2020-08-03 19:16:40 +0200",
     "docdir": "",
     "docfile": "test.adoc",
     "docfilesuffix": ".adoc",
     "docname": "test",
-    "doctime": "01:43:09 +0200",
+    "doctime": "19:16:40 +0200",
     "doctitle": "My Document's Title",
     "doctype": "article",
     "doctype-article": "",
