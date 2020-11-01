@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-asciidoc",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Parse Asciidoctor files and import them with Rollup",
   "main": "src/rollup-plugin-asciidoc.js",
   "repository": {
