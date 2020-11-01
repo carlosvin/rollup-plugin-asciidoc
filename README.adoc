@@ -40,7 +40,7 @@ Import an Asciidoc file in your source code.
 ----
 import post from 'post.adoc' // <1>
 
-console.log(post);
+console.log(post) // <2>
 ----
 <1> Import Asciidoc file.
 <2> Log the content.
@@ -58,14 +58,3 @@ It will output something like:
   html: "<p>Such a post!</p>"
 }
 ----
-
-
-== Changelog
-
-=== 0.3.0
-add:: Add tabindex=0 to hightlighted source code, to prevent https://dequeuniversity.com/rules/axe/3.5/scrollable-region-focusable[scrollable-region-focusable] accessibility issue.
-update:: Bump dependencies.
-
-=== 0.2.0
-
-add:: Apply code highlighting thanks to https://github.com/jirutka/asciidoctor-highlight.js/[asciidoctor-highlight.js]. From generated site, you will have to https://highlightjs.org/download/[import the hihglight.js CSS file from CDN].

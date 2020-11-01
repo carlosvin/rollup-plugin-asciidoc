@@ -6,3 +6,16 @@
 
 === Changed
 - Bump to version 1.0.0, even if there are no breaking changes, I've been using it in production sites.
+
+== [0.3.0]
+
+=== Add
+- Add tabindex=0 to hightlighted source code, to prevent https://dequeuniversity.com/rules/axe/3.5/scrollable-region-focusable[scrollable-region-focusable] accessibility issue.
+
+=== Update 
+- Bump dependencies.
+
+== [0.2.0]
+
+=== Add
+- Apply code highlighting thanks to https://github.com/jirutka/asciidoctor-highlight.js/[asciidoctor-highlight.js]. From generated site, you will have to https://highlightjs.org/download/[import the hihglight.js CSS file from CDN].
