@@ -35,3 +35,9 @@ int main () {
     return 0;
 }
 ----
+
+.bash file include
+[source,bash]
+----
+include::rst2adoc.sh[]
+----

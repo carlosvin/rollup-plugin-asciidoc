@@ -4,7 +4,6 @@ const path = require('path')
 const Asciidoctor = require('asciidoctor')
 const highlightJsExt = require('asciidoctor-highlight.js')
 
-
 const asciidocPlugin = (options = {}) => {
   const adoc = Asciidoctor()
   highlightJsExt.register(adoc.Extensions)
@@ -14,7 +13,7 @@ const asciidocPlugin = (options = {}) => {
   return {
     name: 'rollup-plugin-asciidoc',
     transform(code, id) {
-      if (!filter(id) === -1) return
+      if (!filter(id)) return
 
       const extension = path.extname(id)
 
@@ -22,8 +21,11 @@ const asciidocPlugin = (options = {}) => {
 
       const html = adoc
         .convert(code, { 
+          mkdirs: true,
+          base_dir: path.dirname(id),
+          safe: 'unsafe',
           'attributes': { 
-            'source-highlighter': 'highlightjs-ext'
+            'source-highlighter': 'highlightjs-ext',
           }
         })
         .split('<pre ').join('<pre tabindex="0" ')

@@ -22,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/pluginutils": "^3.1.0",
-    "jest": "^26.2.2",
+    "jest": "^26",
     "prettier": "^2",
     "rollup": "^2"
   },
