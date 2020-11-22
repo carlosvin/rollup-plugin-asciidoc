@@ -17,8 +17,8 @@ refactoring a component to use hooks</a> that offers a nice comparison.</p>
 </div>
 <div class=\\"listingblock\\">
 <div class=\\"content\\">
-<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">def</span> <span class=\\"hljs-title\\">main</span><span class=\\"hljs-params\\">()</span>:</span>
-    <span class=\\"hljs-keyword\\">pass</span></code></pre>
+<pre tabindex=\\"0\\" class=\\"highlight highlight-prismjs prismjs language-python\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"token keyword\\">def</span> <span class=\\"token function\\">main</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">:</span>
+    <span class=\\"token keyword\\">pass</span></code></pre>
 </div>
 </div>
 <div class=\\"admonitionblock warning\\">
@@ -37,21 +37,21 @@ Enter at your own risk.
 <div class=\\"listingblock\\">
 <div class=\\"title\\">void main</div>
 <div class=\\"content\\">
-<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-cpp\\" data-lang=\\"cpp\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">int</span> <span class=\\"hljs-title\\">main</span> <span class=\\"hljs-params\\">()</span> </span>{
-    <span class=\\"hljs-keyword\\">return</span> <span class=\\"hljs-number\\">0</span>;
-}</code></pre>
+<pre tabindex=\\"0\\" class=\\"highlight highlight-prismjs prismjs language-cpp\\"><code class=\\"language-cpp\\" data-lang=\\"cpp\\"><span class=\\"token keyword\\">int</span> <span class=\\"token function\\">main</span> <span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>
+    <span class=\\"token keyword\\">return</span> <span class=\\"token number\\">0</span><span class=\\"token punctuation\\">;</span>
+<span class=\\"token punctuation\\">}</span></code></pre>
 </div>
 </div>
 <div class=\\"listingblock\\">
 <div class=\\"title\\">bash file include</div>
 <div class=\\"content\\">
-<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-bash\\" data-lang=\\"bash\\">FILES=*.md
-<span class=\\"hljs-keyword\\">for</span> f <span class=\\"hljs-keyword\\">in</span> <span class=\\"hljs-variable\\">$FILES</span>
-<span class=\\"hljs-keyword\\">do</span>
-  filename=<span class=\\"hljs-string\\">\\"<span class=\\"hljs-variable\\">\${f%.*}</span>\\"</span>
-  <span class=\\"hljs-built_in\\">echo</span> <span class=\\"hljs-string\\">\\"Converting <span class=\\"hljs-variable\\">$f</span> to <span class=\\"hljs-variable\\">$filename</span>.adoc\\"</span>
-  \`pandoc <span class=\\"hljs-variable\\">$f</span> -f markdown -t asciidoctor -o <span class=\\"hljs-variable\\">$filename</span>.adoc\`
-<span class=\\"hljs-keyword\\">done</span></code></pre>
+<pre tabindex=\\"0\\" class=\\"highlight highlight-prismjs prismjs language-bash\\"><code class=\\"language-bash\\" data-lang=\\"bash\\"><span class=\\"token assign-left variable\\">FILES</span><span class=\\"token operator\\">=</span>*.md
+<span class=\\"token keyword\\">for</span> <span class=\\"token for-or-select variable\\">f</span> <span class=\\"token keyword\\">in</span> <span class=\\"token variable\\">$FILES</span>
+<span class=\\"token keyword\\">do</span>
+  <span class=\\"token assign-left variable\\">filename</span><span class=\\"token operator\\">=</span><span class=\\"token string\\">\\"<span class=\\"token variable\\">\${f<span class=\\"token operator\\">%</span>.*}</span>\\"</span>
+  <span class=\\"token builtin class-name\\">echo</span> <span class=\\"token string\\">\\"Converting <span class=\\"token variable\\">$f</span> to <span class=\\"token variable\\">$filename</span>.adoc\\"</span>
+  <span class=\\"token variable\\"><span class=\\"token variable\\">\`</span>pandoc $f -f markdown -t asciidoctor -o $filename.adoc<span class=\\"token variable\\">\`</span></span>
+<span class=\\"token keyword\\">done</span></code></pre>
 </div>
 </div>",
   "metadata": Object {

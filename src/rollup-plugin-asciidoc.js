@@ -3,10 +3,12 @@ const utils = require('@rollup/pluginutils');
 const path = require('path')
 const Asciidoctor = require('asciidoctor')
 const highlightJsExt = require('asciidoctor-highlight.js')
+const prismExtension = require('asciidoctor-prism-extension');
 
 const asciidocPlugin = (options = {}) => {
   const adoc = Asciidoctor()
   highlightJsExt.register(adoc.Extensions)
+  adoc.SyntaxHighlighter.register('prism', prismExtension);
 
   const filter = utils.createFilter(options.include, options.exclude)
 
@@ -25,7 +27,8 @@ const asciidocPlugin = (options = {}) => {
           base_dir: path.dirname(id),
           safe: 'unsafe',
           'attributes': { 
-            'source-highlighter': 'highlightjs-ext',
+            'source-highlighter': 'prism',
+            'prism-languages': 'bash,json,python,typescript,javascript,java,go,cpp,rust,java'
           }
         })
         .split('<pre ').join('<pre tabindex="0" ')
