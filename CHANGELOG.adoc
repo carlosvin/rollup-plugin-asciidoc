@@ -1,10 +1,14 @@
 = Changelog
 
+== [1.0.1] - 2020-12-19
+=== Update
+- Bump highlight.js dependency to version 10.
+
 == [1.0.0] - 2020-11-01
 === Add
 - Include directive was not supported by this plugin, now you can use it as described in https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files[Include Files Asciidoctor documentation].
 
-=== Changed
+=== Update
 - Bump to version 1.0.0, even if there are no breaking changes, I've been using it in production sites.
 
 == [0.3.0]
