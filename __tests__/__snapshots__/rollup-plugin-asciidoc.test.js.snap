@@ -17,7 +17,7 @@ refactoring a component to use hooks</a> that offers a nice comparison.</p>
 </div>
 <div class=\\"listingblock\\">
 <div class=\\"content\\">
-<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">def</span> <span class=\\"hljs-title\\">main</span><span class=\\"hljs-params\\">()</span>:</span>
+<pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-python\\" data-lang=\\"python\\"><span class=\\"hljs-function\\"><span class=\\"hljs-keyword\\">def</span> <span class=\\"hljs-title\\">main</span>():</span>
     <span class=\\"hljs-keyword\\">pass</span></code></pre>
 </div>
 </div>
@@ -48,8 +48,8 @@ Enter at your own risk.
 <pre tabindex=\\"0\\" class=\\"highlight\\"><code class=\\"language-bash\\" data-lang=\\"bash\\">FILES=*.md
 <span class=\\"hljs-keyword\\">for</span> f <span class=\\"hljs-keyword\\">in</span> <span class=\\"hljs-variable\\">$FILES</span>
 <span class=\\"hljs-keyword\\">do</span>
-  filename=<span class=\\"hljs-string\\">\\"<span class=\\"hljs-variable\\">\${f%.*}</span>\\"</span>
-  <span class=\\"hljs-built_in\\">echo</span> <span class=\\"hljs-string\\">\\"Converting <span class=\\"hljs-variable\\">$f</span> to <span class=\\"hljs-variable\\">$filename</span>.adoc\\"</span>
+  filename=<span class=\\"hljs-string\\">&quot;<span class=\\"hljs-variable\\">\${f%.*}</span>&quot;</span>
+  <span class=\\"hljs-built_in\\">echo</span> <span class=\\"hljs-string\\">&quot;Converting <span class=\\"hljs-variable\\">$f</span> to <span class=\\"hljs-variable\\">$filename</span>.adoc&quot;</span>
   \`pandoc <span class=\\"hljs-variable\\">$f</span> -f markdown -t asciidoctor -o <span class=\\"hljs-variable\\">$filename</span>.adoc\`
 <span class=\\"hljs-keyword\\">done</span></code></pre>
 </div>
@@ -58,7 +58,7 @@ Enter at your own risk.
     "appendix-caption": "Appendix",
     "appendix-refsig": "Appendix",
     "asciidoctor": "",
-    "asciidoctor-version": "2.0.10",
+    "asciidoctor-version": "2.0.12",
     "asdf": "made up attr",
     "attribute-missing": "skip",
     "attribute-undefined": "drop-line",
@@ -93,7 +93,6 @@ Enter at your own risk.
     "filetype-html": "",
     "firstname": "Doc",
     "htmlsyntax": "html",
-    "iconfont-remote": "",
     "iconsdir": "./images/icons",
     "important-caption": "Important",
     "intro": "A short post today about an easy tactic to avoid your useEffect calls becoming recursive when setting state.",
@@ -120,7 +119,6 @@ Enter at your own risk.
     "sectids": "",
     "section-refsig": "Section",
     "stylesdir": ".",
-    "stylesheet": "",
     "table-caption": "Table",
     "tip-caption": "Tip",
     "title": "'Avoiding recursive useEffect hooks in React'",
@@ -130,7 +128,6 @@ Enter at your own risk.
     "user-home": ".",
     "version-label": "Version",
     "warning-caption": "Warning",
-    "webfonts": "",
   },
   "path": "/home/carlos/workspace/rollup-plugin-asciidoc/__tests__/fixtures/test.adoc",
 }
