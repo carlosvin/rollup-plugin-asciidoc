@@ -1,5 +1,9 @@
 = Changelog
 
+== [1.0.4] - 2021-02-20
+=== Fix
+- Move @rollup/pluginutils to dependencies section, so it will be installed together with this plugin.
+
 == [1.0.3] - 2020-12-19
 === Update
 - Bump highlight.js dependency to version 10.
