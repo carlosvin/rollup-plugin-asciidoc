@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Rollup Plugin for Asciidoc</title>
+<date>2020-11-01</date>
+<author>
+<personname>
+<firstname>Carlos</firstname>
+<othername>Martin</othername>
+<surname>Sanchez</surname>
+</personname>
+<email>https://github.com/carlosvin[@carlosvin]</email>
+</author>
+<authorinitials>CMS</authorinitials>
+</info>
+<simpara>Plugin to import Asciidoctor files using Rollup.</simpara>
+<section xml:id="quickstart">
+<title>Quickstart</title>
+<literallayout class="monospaced">$ yarn add rollup-plugin-asciidoc --dev</literallayout>
+<simpara>Add the plugin to Rollup configuration.</simpara>
+<formalpara>
+<title>rollup.config.js</title>
+<para>
+<programlisting language="javascript" linenumbering="unnumbered">import asciidoc from 'rollup-plugin-asciidoc' <co xml:id="CO1-1"/>
+
+// ...
+
+plugins: [ <co xml:id="CO1-2"/>
+			asciidoc(),
+]</programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO1-1">
+<para>Import Asciidoc plugin</para>
+</callout>
+<callout arearefs="CO1-2">
+<para>Plugins section in Rollup configuration</para>
+</callout>
+</calloutlist>
+<simpara>Import an Asciidoc file in your source code.</simpara>
+<formalpara>
+<title>example.js</title>
+<para>
+<programlisting language="javascript" linenumbering="unnumbered">import post from 'post.adoc' <co xml:id="CO2-1"/>
+
+console.log(post) <co xml:id="CO2-2"/></programlisting>
+</para>
+</formalpara>
+<calloutlist>
+<callout arearefs="CO2-1">
+<para>Import Asciidoc file.</para>
+</callout>
+<callout arearefs="CO2-2">
+<para>Log the content.</para>
+</callout>
+</calloutlist>
+<simpara>It will output something like:</simpara>
+<programlisting language="javascript" linenumbering="unnumbered">{
+  meta: {
+    title: "Post title",
+    date: "2019-11-11"
+  },
+  html: "&lt;p&gt;Such a post!&lt;/p&gt;"
+}</programlisting>
+</section>
+</article>
