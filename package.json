@@ -23,12 +23,12 @@
   "license": "MIT",
   "readme": "README.adoc",
   "devDependencies": {
-    "@rollup/pluginutils": "^4.1.0",
     "jest": "^26",
     "prettier": "^2",
     "rollup": "^2"
   },
   "dependencies": {
+    "@rollup/pluginutils": "^4.1.0",
     "asciidoctor": "^2.2.1",
     "asciidoctor-highlight.js": "^0.3.0"
   }
