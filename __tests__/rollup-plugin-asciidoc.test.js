@@ -49,9 +49,13 @@ it('returns a module for the asciidoc file', async () => {
   const requiredModule = requireFromString(code)
   requiredModule.metadata.localdate = undefined
   requiredModule.metadata.localdatetime = undefined
-  requiredModule.metadata.localtime = undefined
   requiredModule.metadata.localyear = undefined
-
+  requiredModule.metadata.localtime = undefined
+  requiredModule.metadata.docdate = undefined
+  requiredModule.metadata.docdatetime = undefined
+  requiredModule.metadata.doctime = undefined
+  requiredModule.metadata.docyear = undefined
+  
   expect(requiredModule).toMatchSnapshot()
   
   expect(requiredModule.filename).toEqual('test.adoc')
